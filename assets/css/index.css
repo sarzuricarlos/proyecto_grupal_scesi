@@ -224,3 +224,50 @@ body {
 }
  
 .card_integrante .contacto a:hover { color: #4ec9b0; }
+
+.tabla_top {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.tabla_top thead tr {
+  background-color: #13131f;
+  border-bottom: 2px solid #4ec9b0;
+}
+.tabla_top thead th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: #4ec9b0;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+.tabla_top tbody tr {
+  border-bottom: 1px solid #1e1e2e;
+  transition: background-color 0.15s;
+}
+.tabla_top tbody tr:hover { background-color: #13131f; }
+.tabla_top tbody td {
+  padding: 0.75rem 1rem;
+  color: #888899;
+  vertical-align: top;
+}
+.tabla_top tbody td:first-child {
+  color: #4ec9b0;
+  font-weight: 600;
+  width: 40px;
+}
+.tabla_top tbody td code {
+  font-family: 'Geist Mono', monospace;
+  background-color: #13131f;
+  color: #79b8ff;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+.tabla_top tbody td:nth-child(2) {
+  color: #cdd6f4;
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.85rem;
+}
