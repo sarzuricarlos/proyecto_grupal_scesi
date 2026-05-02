@@ -329,3 +329,33 @@ body {
   background-color: #3ab89a;
   transform: translateY(-1px);
 }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  body { padding: 1rem; gap: 1rem; }
+ 
+  .cabecera_home {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+ 
+  .cabecera_search { width: 100%; }
+ 
+  .contenedor_principal { flex-direction: column; }
+ 
+  .panel_opciones {
+    flex: none;
+    width: 100%;
+  }
+ 
+  .panel_opciones nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+ 
+  .cards_equipo {
+    grid-template-columns: 1fr;
+  }
+}
