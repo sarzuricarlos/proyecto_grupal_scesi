@@ -156,3 +156,71 @@ body {
   background-color: #3ab89a;
   transform: translateY(-1px);
 }
+
+/* ── PAGINA NOSOTROS ── */
+.cards_equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+ 
+.card_integrante {
+  background-color: #13131f;
+  border: 1px solid #313145;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+ 
+.card_integrante:hover {
+  border-color: #4ec9b0;
+  transform: translateY(-3px);
+}
+ 
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #4ec9b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f0f1a;
+}
+ 
+.card_integrante h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #cdd6f4;
+  text-align: center;
+}
+ 
+.card_integrante .rol {
+  font-size: 0.85rem;
+  color: #4ec9b0;
+  font-weight: 500;
+}
+ 
+.card_integrante .contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+ 
+.card_integrante .contacto a {
+  color: #888899;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+ 
+.card_integrante .contacto a:hover { color: #4ec9b0; }
