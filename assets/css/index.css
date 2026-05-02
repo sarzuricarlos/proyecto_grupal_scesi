@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;600&family=Geist:wght@300;400;600;700&display=swap');
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: 'Geist', sans-serif;
+  background-color: #0f0f1a;
+  color: #cdd6f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+ 
+/* ── CABECERA ── */
+.cabecera_home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  background-color: #1e1e2e;
+  border: 1px solid #313145;
+  border-radius: 16px;
+}
+ 
+.cabecera_home img {
+  flex: 0 0 auto;
+  border-radius: 8px;
+}
+ 
+.cabecera_texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+}
+ 
+.cabecera_home h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4ec9b0;
+  letter-spacing: -0.5px;
+}
+ 
+.cabecera_home h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #888899;
+}
+ 
+.cabecera_search {
+  flex: 0 0 auto;
+  width: 200px;
+  padding: 0.6rem 1rem;
+  background-color: #13131f;
+  border: 1px solid #313145;
+  border-radius: 8px;
+  color: #cdd6f4;
+  font-family: 'Geist', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+ 
+.cabecera_search:focus {
+  border-color: #4ec9b0;
+}
+ 
+.cabecera_search::placeholder { color: #555566; }
+ 
+/* ── LAYOUT PRINCIPAL ── */
+.contenedor_principal {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+}
+ 
+/* ── SIDEBAR ── */
+.panel_opciones {
+  flex: 0 0 200px;
+  background-color: #1e1e2e;
+  border: 1px solid #313145;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+ 
+.panel_opciones nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ 
+.panel_opciones nav ul li a {
+  text-decoration: none;
+  color: #888899;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.55rem 0.9rem;
+  display: block;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+ 
+.panel_opciones nav ul li a:hover,
+.panel_opciones nav ul li a.activo {
+  background-color: #13131f;
+  color: #4ec9b0;
+}
+ 
+/* ── PANEL CONTENIDO ── */
+.panel_contenido {
+  flex: 1;
+  background-color: #1e1e2e;
+  border: 1px solid #313145;
+  border-radius: 16px;
+  padding: 2rem;
+}
+ 
+.panel_contenido h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #cdd6f4;
+  margin-bottom: 1rem;
+}
+ 
+.panel_contenido p {
+  line-height: 1.8;
+  color: #888899;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+ 
+.boton_info {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  background-color: #4ec9b0;
+  color: #0f0f1a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, transform 0.15s;
+}
+ 
+.boton_info:hover {
+  background-color: #3ab89a;
+  transform: translateY(-1px);
+}
