@@ -359,3 +359,36 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.panel_contenido,
+.panel_opciones,
+.cabecera_home {
+  transition: border-color 0.2s;
+}
+
+.panel_contenido:hover,
+.panel_opciones:hover {
+  border-color: #4ec9b0;
+}
+
+.version_tag {
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.75rem;
+  color: #4ec9b0;
+  background-color: #13131f;
+  border: 1px solid #313145;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.footer_site {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #555566;
+  border-top: 1px solid #1e1e2e;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f0f1a; }
+::-webkit-scrollbar-thumb { background: #313145; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4ec9b0; }
