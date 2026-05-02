@@ -1,1 +1,51 @@
-.
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='shortcut icon' href='../icons/logo_git-background.ico' type='image/x-icon'>
+  <link rel='stylesheet' href='../css/index.css'>
+  <title>Top Git — Los Viciosos del Git</title>
+</head>
+<body>
+  <header class='cabecera_home'>
+    <img src='../imgs/logo_git-background.png' alt='Logo Git' height='120'>
+    <div class='cabecera_texto'>
+      <h1>Los Viciosos del Git</h1>
+      <h2>Top comandos de Git</h2>
+    </div>
+    <input type='text' placeholder='Buscar...' class='cabecera_search'>
+  </header>
+  <main class='contenedor_principal'>
+    <aside class='panel_opciones'>
+      <nav><ul>
+        <li><a href='../../index.html'>Inicio</a></li>
+        <li><a href='nosotros.html'>Nosotros</a></li>
+        <li><a href='top.html' class='activo'>Top Git</a></li>
+        <li><a href='sugerencias.html'>Sugerencias</a></li>
+      </ul></nav>
+    </aside>
+    <section class='panel_contenido'>
+      <h2>Top 10 Comandos Git Mas Usados</h2>
+      <p>Los comandos que todo desarrollador deberia dominar segun el curso de la SCESI.</p>
+      <table class='tabla_top'>
+        <thead>
+          <tr><th>#</th><th>Comando</th><th>Para que sirve</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><code>git init</code></td><td>Inicializa un repositorio Git en la carpeta actual</td></tr>
+          <tr><td>2</td><td><code>git add .</code></td><td>Manda todos los archivos al Stage Area</td></tr>
+          <tr><td>3</td><td><code>git commit -m</code></td><td>Crea un punto de guardado con los cambios en stage</td></tr>
+          <tr><td>4</td><td><code>git push origin</code></td><td>Sube tus commits al repositorio remoto</td></tr>
+          <tr><td>5</td><td><code>git pull origin</code></td><td>Trae los cambios del repositorio remoto</td></tr>
+          <tr><td>6</td><td><code>git checkout -b</code></td><td>Crea una rama nueva y te mueve a ella</td></tr>
+          <tr><td>7</td><td><code>git merge --no-ff</code></td><td>Fusiona ramas conservando el historial</td></tr>
+          <tr><td>8</td><td><code>git stash</code></td><td>Guarda cambios temporalmente sin hacer commit</td></tr>
+          <tr><td>9</td><td><code>git restore</code></td><td>Revierte un archivo a su estado anterior</td></tr>
+          <tr><td>10</td><td><code>git log --oneline</code></td><td>Muestra el historial de commits resumido</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
